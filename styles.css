@@ -1,0 +1,102 @@
+/* Css reset  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.5;
+  color: #4d4e53;
+  font-size: 1.2rem;
+}
+
+/* Navigation Styling  */
+#header #navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* We also can write height: 100%   */
+  bottom: 0;
+  width: 25%;
+  /* Vertical scroll bar.  */
+  overflow: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 880px) {
+  #header #navbar {
+    position: absolute;
+    top: 0;
+    bottom: 100px;
+    width: 100%;
+    border: 2px solid black;
+  }
+}
+
+#navbar header {
+  font-size: 2rem;
+  /*padding will be set 32px relative to font-size and font-size is 2rem  */
+  margin: 0.7em 0.1em;
+  padding: 0.1em 0.7em;
+}
+
+@media (max-width: 880px) {
+  #navbar header {
+    text-align: center;
+  }
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: #4d4e53;
+}
+
+#navbar ul li {
+  font-size: 1.2rem;
+  list-style: none;
+  margin: 0.5em 1em;
+}
+
+/* Global styling */
+header {
+  color: black;
+  font-size: 2.1rem;
+  margin: 0.5em 1em;
+}
+
+.sections-container {
+  width: 75%;
+  margin-left: 25%;
+}
+
+@media (max-width: 880px) {
+  .sections-container {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 340px;
+  }
+}
+
+.main-section p {
+  margin: 0.8em 1.8em;
+}
+
+.main-section ul li {
+  margin: 0.8em 1.8em;
+  margin-left: 5em;
+}
+
+.main-section code {
+  display: block;
+  font-size: 1.1rem;
+  margin: 0.8em 2em;
+  padding: 1.1em 0.8em;
+  margin-left: 3em;
+  background-color: #f7f7f7;
+}
+
+.main-section ul > ul > li {
+  margin: 0.8em 2em;
+  margin-left: 7em;
+}
